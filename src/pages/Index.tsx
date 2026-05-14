@@ -270,17 +270,17 @@ export default function Index() {
           </div>
 
           <div className="relative z-10 max-w-2xl">
-            <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
-              <p className="font-mono text-xs text-foreground/90">Медицинские изделия · Сертифицировано</p>
+            <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-teal-400/40 bg-teal-50 px-4 py-1.5 duration-700">
+              <p className="font-mono text-xs text-teal-600">Медицинские изделия · Сертифицировано</p>
             </div>
-            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
+            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-teal-700 duration-1000 md:text-7xl lg:text-8xl">
               <span className="text-balance">
                 Краниальный ортез
                 <br />
                 для вашего ребёнка
               </span>
             </h1>
-            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
+            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-teal-900/80 duration-1000 delay-200 md:text-xl">
               <span className="text-pretty">
                 ORTHOCRAN — индивидуально изготовленный ортопедический шлем для коррекции деформаций черепа у детей. Безопасно, эффективно, с заботой о каждом ребёнке.
               </span>
@@ -301,9 +301,9 @@ export default function Index() {
 
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-in fade-in duration-1000 delay-500">
             <div className="flex items-center gap-2">
-              <p className="font-mono text-xs text-foreground/80">Листайте вправо</p>
-              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-foreground/20 bg-foreground/15 backdrop-blur-md">
-                <div className="h-2 w-2 animate-pulse rounded-full bg-foreground/80" />
+              <p className="font-mono text-xs text-teal-600">Листайте вправо</p>
+              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-teal-400/30 bg-teal-50">
+                <div className="h-2 w-2 animate-pulse rounded-full bg-teal-500" />
               </div>
             </div>
           </div>
