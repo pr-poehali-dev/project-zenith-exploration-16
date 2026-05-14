@@ -258,8 +258,17 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
-          <div className="max-w-3xl">
+        <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24">
+          {/* Крупное фото шлема справа */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-end overflow-hidden">
+            <img
+              src="https://cdn.poehali.dev/projects/a10a316f-7d74-45f3-9bd8-8d0a2a1a703b/files/366c4533-6f94-40b5-bed8-64938360dd62.jpg"
+              alt="Ортез ORTHOCRAN"
+              className={`h-[85vh] w-auto max-w-[55vw] object-contain opacity-0 mix-blend-luminosity transition-all duration-1000 delay-300 lg:max-w-[50vw] ${isLoaded ? "translate-x-0 opacity-90" : "translate-x-12 opacity-0"}`}
+            />
+          </div>
+
+          <div className="relative z-10 max-w-2xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
               <p className="font-mono text-xs text-foreground/90">Медицинские изделия · Сертифицировано</p>
             </div>
