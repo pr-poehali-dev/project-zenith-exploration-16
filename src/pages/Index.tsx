@@ -258,7 +258,7 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24">
+        <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24 bg-white">
           {/* Крупное фото шлема справа */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-end overflow-hidden">
             <img
