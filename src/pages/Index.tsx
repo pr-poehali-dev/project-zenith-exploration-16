@@ -265,7 +265,7 @@ export default function Index() {
               src="https://cdn.poehali.dev/projects/a10a316f-7d74-45f3-9bd8-8d0a2a1a703b/bucket/23dde639-fb13-4df8-b852-f6754092730c.jpg"
               alt="Ортез ORTHOCRAN"
               className={`h-[85vh] w-auto max-w-[55vw] object-contain transition-all duration-1000 delay-300 lg:max-w-[50vw] ${isLoaded ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"}`}
-              style={{ mixBlendMode: "screen" }}
+
             />
           </div>
 
