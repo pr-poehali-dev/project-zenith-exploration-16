@@ -219,10 +219,10 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <span className="font-sans text-xl font-bold text-foreground">O</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-500 transition-all duration-300 hover:scale-110 hover:bg-teal-600">
+            <span className="font-sans text-xl font-bold text-white">O</span>
           </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">ORTHOCRAN</span>
+          <span className="font-sans text-xl font-semibold tracking-tight text-teal-700">ORTHOCRAN</span>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -231,12 +231,12 @@ export default function Index() {
               key={item}
               onClick={() => scrollToSection(index)}
               className={`group relative font-sans text-sm font-medium transition-colors ${
-                currentSection === index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
+                currentSection === index ? "text-teal-600" : "text-teal-800/70 hover:text-teal-600"
               }`}
             >
               {item}
               <span
-                className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-300 ${
+                className={`absolute -bottom-1 left-0 h-px bg-teal-500 transition-all duration-300 ${
                   currentSection === index ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
