@@ -15,33 +15,40 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            О продукте
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Краниальный ортез ORTHOCRAN</p>
         </div>
 
         <div className="space-y-6 md:space-y-8">
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
-              year: "2024",
+              title: "Индивидуальное моделирование",
+              category: "3D-сканирование черепа · Точная подгонка под ребёнка",
+              year: "Шаг 1",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
-              year: "2024",
+              title: "Современные материалы",
+              category: "Лёгкий полимер · Гипоаллергенно · Вентилируемый корпус",
+              year: "Шаг 2",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Медицинская сертификация",
+              category: "ТУ 32.50.22-001-90529879-2019 · Протоколы испытаний",
+              year: "Шаг 3",
               direction: "left",
+            },
+            {
+              number: "04",
+              title: "Сопровождение лечения",
+              category: "Регулярные осмотры · Коррекция ортеза · Консультации",
+              year: "Шаг 4",
+              direction: "right",
             },
           ].map((project, i) => (
             <ProjectCard key={i} project={project} index={i} isVisible={isVisible} />
