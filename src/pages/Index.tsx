@@ -258,16 +258,7 @@ export default function Index() {
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {/* Hero Section */}
-        <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24 bg-white">
-          {/* Крупное фото шлема справа */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-end overflow-hidden">
-            <img
-              src="https://cdn.poehali.dev/projects/a10a316f-7d74-45f3-9bd8-8d0a2a1a703b/bucket/23dde639-fb13-4df8-b852-f6754092730c.jpg"
-              alt="Ортез ORTHOCRAN"
-              className={`h-[85vh] w-auto max-w-[55vw] object-contain transition-all duration-1000 delay-300 lg:max-w-[50vw] ${isLoaded ? "translate-x-0 opacity-100" : "translate-x-12 opacity-0"}`}
-
-            />
-          </div>
+        <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24">
 
           <div className="relative z-10 max-w-2xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-teal-400/40 bg-teal-50 px-4 py-1.5 duration-700">
