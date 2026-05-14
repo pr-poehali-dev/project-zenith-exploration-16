@@ -33,8 +33,12 @@ export function CustomCursor() {
       targetPositionRef.current = { x: e.clientX, y: e.clientY }
 
       const target = e.target as HTMLElement
-      isPointerRef.current =
-        window.getComputedStyle(target).cursor === "pointer" || target.tagName === "BUTTON" || target.tagName === "A"
+      try {
+        isPointerRef.current =
+          window.getComputedStyle(target).cursor === "pointer" || target.tagName === "BUTTON" || target.tagName === "A"
+      } catch {
+        isPointerRef.current = false
+      }
     }
 
     window.addEventListener("mousemove", handleMouseMove, { passive: true })
