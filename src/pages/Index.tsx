@@ -219,10 +219,10 @@ export default function Index() {
           onClick={() => scrollToSection(0)}
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-500 transition-all duration-300 hover:scale-110 hover:bg-teal-600">
-            <span className="font-sans text-xl font-bold text-white">O</span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
+            <span className="font-sans text-xl font-bold text-foreground">O</span>
           </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-teal-700">ORTHOCRAN</span>
+          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">ORTHOCRAN</span>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -231,12 +231,12 @@ export default function Index() {
               key={item}
               onClick={() => scrollToSection(index)}
               className={`group relative font-sans text-sm font-medium transition-colors ${
-                currentSection === index ? "text-teal-600" : "text-teal-800/70 hover:text-teal-600"
+                currentSection === index ? "text-foreground" : "text-foreground/80 hover:text-foreground"
               }`}
             >
               {item}
               <span
-                className={`absolute -bottom-1 left-0 h-px bg-teal-500 transition-all duration-300 ${
+                className={`absolute -bottom-1 left-0 h-px bg-foreground transition-all duration-300 ${
                   currentSection === index ? "w-full" : "w-0 group-hover:w-full"
                 }`}
               />
@@ -261,17 +261,17 @@ export default function Index() {
         <section className="relative flex min-h-screen w-screen shrink-0 items-center px-6 pt-24 pb-16 md:px-12 md:pb-24">
 
           <div className="relative z-10 max-w-2xl">
-            <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-teal-400/40 bg-teal-50 px-4 py-1.5 duration-700">
-              <p className="font-mono text-xs text-teal-600">Медицинские изделия · Сертифицировано</p>
+            <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
+              <p className="font-mono text-xs text-foreground/90">Медицинские изделия · Сертифицировано</p>
             </div>
-            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-teal-700 duration-1000 md:text-7xl lg:text-8xl">
+            <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
               <span className="text-balance">
                 Краниальный ортез
                 <br />
                 для вашего ребёнка
               </span>
             </h1>
-            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-teal-900/80 duration-1000 delay-200 md:text-xl">
+            <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
               <span className="text-pretty">
                 ORTHOCRAN — индивидуально изготовленный ортопедический шлем для коррекции деформаций черепа у детей. Безопасно, эффективно, с заботой о каждом ребёнке.
               </span>
@@ -292,9 +292,9 @@ export default function Index() {
 
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-in fade-in duration-1000 delay-500">
             <div className="flex items-center gap-2">
-              <p className="font-mono text-xs text-teal-600">Листайте вправо</p>
-              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-teal-400/30 bg-teal-50">
-                <div className="h-2 w-2 animate-pulse rounded-full bg-teal-500" />
+              <p className="font-mono text-xs text-foreground/80">Листайте вправо</p>
+              <div className="flex h-6 w-12 items-center justify-center rounded-full border border-foreground/20 bg-foreground/15 backdrop-blur-md">
+                <div className="h-2 w-2 animate-pulse rounded-full bg-foreground/80" />
               </div>
             </div>
           </div>
